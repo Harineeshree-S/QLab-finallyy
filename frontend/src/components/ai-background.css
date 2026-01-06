@@ -1,0 +1,13 @@
+.ai-bg-canvas { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.95; filter: drop-shadow(0 8px 24px rgba(2,6,23,0.6)); }
+/* three.js-specific styling removed (three.js not used) */
+
+/* container for three.js renderer */
+.ai-bg-container { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.95; }
+
+/* make ai body content sit above the canvas */
+.ai-body { position: relative; }
+.ai-body > * { position: relative; z-index: 2; }
+
+/* when AI error present, add a subtle red glow */
+.ai-body .ai-error { position: relative; z-index: 2; }
+.ai-panel.error .ai-bg-canvas, .ai-panel.error .ai-bg-container canvas { filter: drop-shadow(0 8px 24px rgba(176,0,32,0.3)); }

@@ -1,0 +1,14 @@
+.cube-frame { perspective: 800px; display: inline-block; }
+.cube { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; animation: spin 6s linear infinite; }
+.face { position: absolute; width: 100%; height: 100%; border-radius: 12px; box-shadow: 0 12px 30px rgba(2,6,23,0.6); opacity: 0.95; }
+.front { background: linear-gradient(135deg, rgba(99,102,241,0.9), rgba(59,130,246,0.8)); transform: translateZ(70px); }
+.back { background: linear-gradient(135deg, rgba(59,130,246,0.85), rgba(99,102,241,0.7)); transform: rotateY(180deg) translateZ(70px); }
+.right { background: linear-gradient(135deg, rgba(99,102,241,0.85), rgba(34,197,94,0.7)); transform: rotateY(90deg) translateZ(70px); }
+.left { background: linear-gradient(135deg, rgba(139,92,246,0.85), rgba(99,102,241,0.7)); transform: rotateY(-90deg) translateZ(70px); }
+.top { background: linear-gradient(135deg, rgba(59,130,246,0.85), rgba(139,92,246,0.7)); transform: rotateX(90deg) translateZ(70px); }
+.bottom { background: linear-gradient(135deg, rgba(139,92,246,0.75), rgba(34,197,94,0.6)); transform: rotateX(-90deg) translateZ(70px); }
+
+@keyframes spin { from { transform: rotateX(15deg) rotateY(0deg); } to { transform: rotateX(15deg) rotateY(360deg); } }
+
+/* subtle hover interaction */
+.cube-frame:hover .cube { animation-play-state: paused; transform: rotateX(10deg) rotateY(20deg) scale(1.03); }
