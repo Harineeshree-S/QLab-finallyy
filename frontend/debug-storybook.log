@@ -1,0 +1,70 @@
+[14:44:32.094] [INFO] storybook v10.1.11
+[14:44:34.174] [DEBUG] Getting package.json info for C:/Users/laksh/Downloads/QLab finalyyy/frontend/package.json...
+[14:44:34.175] [WARN] You are currently using Storybook [1m10.1.11[22m but you have packages which are incompatible with it:
+
+- @storybook/addon-essentials@8.6.15 which depends on 8.6.15
+ Repo: https://github.com/storybookjs/storybook/tree/next/code/addons/essentials
+
+Please consider updating your packages or contacting the maintainers for compatibility details.
+
+For more details on compatibility guidance, see:
+https://github.com/storybookjs/storybook/issues/32836
+[14:44:34.188] [ERROR] [38;2;241;97;97mSB_CORE-SERVER_0002 (CriticalPresetLoadError): Storybook failed to load the following preset: @storybook/react-webpack5/preset.
+
+Please check whether your setup is correct, the Storybook dependencies (and their peer dependencies) are installed correctly and there are no package version clashes.
+
+If you believe this is a bug, please open an issue on Github.
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@storybook/react-webpack5' imported from C:\Users\laksh\AppData\Local\npm-cache\_npx\6fe9a9991b157df1\node_modules\storybook\dist\_node-chunks\chunk-O7UZQAUS.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:316:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:858:18)
+    at defaultResolve (node:internal/modules/esm/resolve:990:11)
+    at nextResolve (node:internal/modules/esm/hooks:785:28)
+    at AsyncLoaderHooksOnLoaderHookWorker.resolve (node:internal/modules/esm/hooks:271:30)
+    at MessagePort.handleMessage (node:internal/modules/esm/worker:251:24)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+
+More info: 
+[39m
+    at loadPreset (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/_node-chunks/chunk-Q4DOC7HF.js:10101:13)
+    at async Promise.all (index 0)
+    at async loadPresets (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/_node-chunks/chunk-Q4DOC7HF.js:10110:73)
+    at async getPresets (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/_node-chunks/chunk-Q4DOC7HF.js:10141:23)
+    at async buildDevStandalone (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/core-server/index.js:7163:17)
+    at async withTelemetry (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/_node-chunks/chunk-2372JZ52.js:209:12)
+    at async dev (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file:///C:/Users/laksh/AppData/Local/npm-cache/_npx/6fe9a9991b157df1/node_modules/storybook/dist/bin/core.js:2801:92)
+[14:44:34.190] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
+[14:44:34.211] [WARN]   Failed to load preset: {"name":"C:/Users/laksh/Downloads/QLab finalyyy/frontend/node_modules/@storybook/addon-essentials/dist/preset.js"} on level 2
+[14:44:34.211] [ERROR] [38;2;241;97;97mError: Cannot find module 'storybook/internal/common'
+Require stack:
+- .\node_modules\@storybook\addon-essentials\dist\preset.js[39m
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (.\node_modules\@storybook\addon-essentials\dist\preset.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[14:44:34.220] [WARN]   Failed to load preset: {"name":"C:/Users/laksh/Downloads/QLab finalyyy/frontend/node_modules/@storybook/preset-create-react-app/dist/index.js"} on level 2
+[14:44:34.220] [ERROR] [38;2;241;97;97mError: Cannot find module 'storybook/internal/node-logger'
+Require stack:
+- .\node_modules\@storybook\preset-create-react-app\dist\index.js[39m
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (.\node_modules\@storybook\preset-create-react-app\dist\index.js:1:1120)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+[14:44:49.194] [PROMPT] Would you like to send anonymous crash reports to improve Storybook and fix bugs faster? {"choice":true}
+[14:44:49.198] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
